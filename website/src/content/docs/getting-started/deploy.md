@@ -32,3 +32,17 @@ npm run deploy        # build and deploy; the Worker creates its own tables
 ```
 
 The first deploy creates a D1 database named `<worker-name>-db` (for example `formbucket-db`) and every later deploy keeps using it. To use an existing database instead, add its `database_id` under `d1_databases` in `wrangler.jsonc`.
+
+## The `website/` folder in your copy
+
+The repository also contains the source of this documentation in a `website/` folder. The button copies the whole repository, so your copy has that folder too. The app doesn't use it: the build and deploy only look at the repository root, and nothing in `website/` is built or deployed with your Worker. The button can't leave it out for you, so if you don't want it you have to remove it yourself.
+
+You can leave it alone, or delete it from your copy (the same goes for a manual clone):
+
+```bash
+git rm -r website
+git commit -m "Remove docs site"
+git push
+```
+
+If you keep it and your Worker is connected to your repository with Workers Builds, exclude `website/**` in **Settings → Build → Build watch paths** so that a change to the docs doesn't rebuild your app. If you delete it, pulling later updates from the original repository may show a conflict in that folder, and you can resolve it by deleting the folder again.

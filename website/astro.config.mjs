@@ -13,7 +13,8 @@ export default defineConfig({
       description: "Self-hosted form backend on Cloudflare Workers and D1: schemas, analytics, webhooks, a cursor-based pull API and bot protection.",
       logo: { src: "./src/assets/logo.svg", alt: "FormBucket" },
       favicon: "/favicon.svg",
-      social: [{ icon: "github", label: "GitHub", href: REPO }],
+      // The header GitHub link (with the star count) is a custom component.
+      components: { SocialIcons: "./src/components/SocialIcons.astro" },
       editLink: { baseUrl: `${REPO}/edit/main/website/` },
       lastUpdated: true,
       customCss: ["./src/styles/custom.css"],
