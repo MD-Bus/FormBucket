@@ -15,7 +15,6 @@ export default defineConfig({
       favicon: "/favicon.svg",
       // The header GitHub link (with the star count) is a custom component.
       components: { SocialIcons: "./src/components/SocialIcons.astro" },
-      editLink: { baseUrl: `${REPO}/edit/main/website/` },
       lastUpdated: true,
       customCss: ["./src/styles/custom.css"],
       // Fails the build on any broken internal link, so the docs cannot quietly rot.
