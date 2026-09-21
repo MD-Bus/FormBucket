@@ -15,7 +15,7 @@ All notable changes to FormBucket. Newest first. Each version lists what was add
 - **Automatic database migrations.** The migrations are bundled into the Worker and applied on the first request after a deploy, so installs made from the Cloudflare dashboard need no commands. Shares `d1_migrations` with Wrangler.
 - **Optional `DB_SUFFIX` build variable**: names the database `<worker-name>-<suffix>` (for example `formbucket-x7k2`). See [Databases and multiple installs](website/src/content/docs/getting-started/configuration.md#databases-and-multiple-installs).
 - **Loading feedback**: a progress bar, pending styling on sidebar links, prefetch on hover.
-- **Documentation website** (`website/`, built with Astro Starlight): the README split into one page per topic with a sidebar built from the folders, full-text search, dark mode, an "Edit this page" link and a build that fails on broken internal links. New pages: Quickstart and Documentation site. It is a separate Cloudflare Worker (`formbucket-docs`) from the app, deployed independently; see `website/README.md`.
+- **Documentation website** (`website/`, built with Astro Starlight): the README split into one page per topic with a sidebar built from the folders, full-text search, dark mode and a build that fails on broken internal links. New pages: Quickstart and Documentation site. It is a separate Cloudflare Worker (`formbucket-docs`) from the app, deployed independently; see `website/README.md`.
 - Documentation in the README: Architecture (request flow, tables, migrations, performance), a table of every dashboard page, and this changelog.
 
 ### Changed

@@ -9,7 +9,7 @@ This site is built with [Starlight](https://starlight.astro.build) (Astro). The 
 
 ## Editing a page
 
-Every page has an **Edit page** link that opens its Markdown file on GitHub. Locally:
+The pages are Markdown files in `website/src/content/docs/`. To work on them locally:
 
 ```bash
 cd website
