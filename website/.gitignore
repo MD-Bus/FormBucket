@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.astro/
+.wrangler/
+# Copied from the repository root by scripts/sync-from-repo.mjs (single source of truth stays at the root).
+public/screenshots/
+src/content/docs/more/changelog.md

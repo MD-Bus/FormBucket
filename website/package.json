@@ -1,0 +1,24 @@
+{
+  "name": "formbucket-docs",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Documentation website for FormBucket (Astro Starlight).",
+  "license": "MIT",
+  "scripts": {
+    "sync": "node scripts/sync-from-repo.mjs",
+    "dev": "npm run sync && astro dev",
+    "build": "npm run sync && astro build",
+    "preview": "astro preview",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.42.2",
+    "astro": "^7.3.3",
+    "sharp": "^0.35.4"
+  },
+  "devDependencies": {
+    "starlight-links-validator": "^0.26.0",
+    "wrangler": "^4.135.0"
+  }
+}

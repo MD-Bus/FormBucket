@@ -1,0 +1,11 @@
+{
+	// The documentation site is its own Worker with its own name, so it can never overwrite the FormBucket app
+	// (whose Worker is defined by the wrangler.jsonc in the repository root).
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "formbucket-docs",
+	"compatibility_date": "2025-04-04",
+	"assets": {
+		"directory": "./dist",
+		"not_found_handling": "404-page"
+	}
+}

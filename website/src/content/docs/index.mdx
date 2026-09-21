@@ -1,0 +1,56 @@
+---
+title: Self-hosted form backend
+description: A self-hosted form backend for Cloudflare Workers and D1. Collect, validate, analyse and route form submissions from your own account.
+template: splash
+hero:
+  tagline: A self-hosted form backend that runs entirely on your own Cloudflare account. Collect submissions from any form, validate them, see where visitors drop off, forward them to a webhook and let your apps pull only what is new.
+  image:
+    file: ../../assets/logo.svg
+  actions:
+    - text: Get started
+      link: /getting-started/quickstart/
+      icon: right-arrow
+    - text: Deploy to Cloudflare
+      link: https://deploy.workers.cloudflare.com/?url=https://github.com/momardia54/formbucket
+      icon: external
+      variant: secondary
+    - text: View on GitHub
+      link: https://github.com/momardia54/formbucket
+      icon: github
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+![FormBucket analytics dashboard](/screenshots/analytics.jpg)
+
+## What you get
+
+<CardGrid stagger>
+  <Card title="Form buckets" icon="document">
+    One endpoint per form. Post from plain HTML, `fetch`, cURL or a server, as JSON, urlencoded or multipart. [Sending data](/guides/sending-data/)
+  </Card>
+  <Card title="Schema you control" icon="pencil">
+    Describe your fields and accept everything by default. Switch on enforcement when you are ready to reject what does not match. [Schema](/guides/schema/)
+  </Card>
+  <Card title="Analytics without cookies" icon="rocket">
+    Views, conversion, a funnel, rejections and per-field insights. No cookies, no stored visitor IPs. [Analytics](/guides/analytics/)
+  </Card>
+  <Card title="Signed webhooks" icon="random">
+    HMAC-signed JSON with a delivery log, resend and automatic retries. [Webhooks](/guides/webhooks/)
+  </Card>
+  <Card title="Pull API with cursors" icon="open-book">
+    Named consumers remember where they stopped, so n8n, cron jobs and scripts read only new entries. Long polling included. [Pull API](/guides/pull-api/)
+  </Card>
+  <Card title="Bot protection" icon="setting">
+    Honeypot, Cloudflare Turnstile, rate limits, automatic blocking and a Blocked IPs list you control. [Spam protection](/guides/spam-protection/)
+  </Card>
+</CardGrid>
+
+## Status
+
+FormBucket is **pre-1.0**. It works and is documented, but the public API may still change and we haven't tested every way of installing it yet. What is left is listed in the [Road to 1.0.0](/more/roadmap/).
+
+## Runs free, on your account
+
+It needs Workers, D1 and one cron trigger, and nothing else (no Queues or R2). FormBucket creates and upgrades its own database tables, so a deploy from the Cloudflare dashboard needs no commands. New here? Start with the [Quickstart](/getting-started/quickstart/), or read how it is put together in [Architecture](/more/architecture/).

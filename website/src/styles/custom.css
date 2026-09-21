@@ -1,0 +1,11 @@
+/* Teal accent to match the dashboard's chart colour. */
+:root {
+  --sl-color-accent-low: #b9ece0;
+  --sl-color-accent: #0f8f77;
+  --sl-color-accent-high: #0a5546;
+}
+:root[data-theme="dark"] {
+  --sl-color-accent-low: #0a3d33;
+  --sl-color-accent: #14b8a0;
+  --sl-color-accent-high: #8ee6d4;
+}
