@@ -5,7 +5,7 @@ sidebar:
   order: 7
 ---
 
-This is the to-do list for 1.0.0. We tick things off as they get done and add new ones when we find them. The current version is 0.3.0.
+This is the to-do list for 1.0.0. We tick things off as they get done and add new ones when we find them. The current version is 0.3.1.
 
 ## What 1.0.0 means
 
@@ -89,7 +89,7 @@ Each of these is either fixed before 1.0.0 or written down as something we chose
 
 | Step | Version | What goes in |
 |---|---|---|
-| 1 | `v0.3.0` (pre-release) | What exists today |
+| 1 | `v0.3.1` (pre-release) | What exists today |
 | 2 | `v0.4.0` | Sections 1 and 2: install paths tested, CI, end-to-end tests, browser checks |
 | 3 | `v0.5.0` (if needed) | Sections 4 and 5: security review and the remaining gaps |
 | 4 | `v1.0.0-rc.1` | Section 3 done. We run real forms on it for a week or two |

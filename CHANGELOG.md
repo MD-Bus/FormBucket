@@ -2,6 +2,28 @@
 
 All notable changes to FormBucket. Newest first. Each version lists what was added, what changed, what was fixed and how to upgrade. The full behaviour of every feature is documented in the [documentation](website/src/content/docs/getting-started/quickstart.md).
 
+## 0.3.1
+
+Documentation and branding only. The app itself behaves exactly like 0.3.0.
+
+### Added
+- **Roadmap to 1.0.0**: a public checklist of what is left before the API can be frozen, with a release plan. See [Road to 1.0.0](website/src/content/docs/more/roadmap.md).
+- **Branching and release notes** in the development guide: `main` is stable, `develop` is where work happens, and pre-release builds are tagged from `develop` as `v0.4.0-beta.1` and so on. See [Branches and releases](website/src/content/docs/more/development.md#branches-and-releases).
+- **The `website/` folder in your copy**: the Deploy page now explains that the button copies the docs source too, that it doesn't affect the app, and how to remove it or exclude it from build watch paths. See [The `website/` folder in your copy](website/src/content/docs/getting-started/deploy.md#the-website-folder-in-your-copy).
+- **GitHub star count** next to the GitHub link in the docs site header. It is loaded in the visitor's browser, cached for an hour, and hidden if GitHub can't be reached.
+
+### Changed
+- **New logo**: a form wireframe (a card with two input fields and a submit button) on the black square, in black, gray and white. It replaces the old cup icon in the README, the dashboard favicon and form switcher, and the docs site.
+- **README rewritten** to describe every feature with examples: one endpoint per form, the optional schema, the pull API with cursors (acknowledge, long polling, replay, unread counts), cookie-free analytics, signed webhooks, bot protection and blocking, the dashboard, and security.
+- **Docs wording**: the roadmap, quickstart, documentation site page and branching section were rewritten in plainer language.
+- **Pre-release tags are called beta**, not canary.
+
+### Removed
+- The **Edit page** link at the bottom of every docs page.
+
+### Upgrading from 0.3.0
+- Nothing to do. There are no code changes that affect behaviour and no new migration.
+
 ## 0.3.0
 
 ### Added

@@ -14,7 +14,7 @@ forward them to a webhook, or let your own apps pull only the entries they haven
 
 ![Analytics](assets/screenshots/analytics.jpg)
 
-> **Status: pre-1.0 (0.3.0).** It works and is documented, but the public API may still change and we haven't tested every way of installing it yet. What is left before 1.0.0 is in the [Roadmap](website/src/content/docs/more/roadmap.md).
+> **Status: pre-1.0 (0.3.1).** It works and is documented, but the public API may still change and we haven't tested every way of installing it yet. What is left before 1.0.0 is in the [Roadmap](website/src/content/docs/more/roadmap.md).
 
 ## Why FormBucket
 
